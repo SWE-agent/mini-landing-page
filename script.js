@@ -86,3 +86,22 @@ function rotateCarousel() {
 
 // Start the carousel
 setInterval(rotateCarousel, 3000);
+
+// Copy command to clipboard
+function copyCommand() {
+    const command = 'pip install mini-swe-agent && mini';
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(command).then(() => {
+        // Show tooltip
+        const tooltip = document.getElementById('copy-tooltip');
+        tooltip.classList.add('show');
+        
+        // Hide tooltip after 2 seconds
+        setTimeout(() => {
+            tooltip.classList.remove('show');
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+    });
+}

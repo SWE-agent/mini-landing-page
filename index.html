@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>mini agent</h1>
+        <h1>mini agent <code class="install-cmd" id="install-cmd" onclick="copyCommand()">pip install mini-swe-agent && mini</code></h1>
+        <div id="copy-tooltip" class="copy-tooltip">Copied!</div>
         <h2>The minimal software engineering AI agent</h2>
         
         <div class="subtitle">
@@ -22,7 +23,7 @@
 
         <div class="content">
             <p>
-                In 2024, we built <a href="https://github.com/swe-bench/SWE-bench" target="_blank">SWE-bench</a> 
+                In 2024, we built <a href="https://swebench.com" target="_blank">SWE-bench</a> 
                 and <a href="https://github.com/swe-agent/swe-agent" target="_blank">SWE-agent</a> at Princeton University 
                 and helped kickstart the coding agent revolution. These works have influenced most modern AI agents, including Claude Code, GitHub copilot and many others.
             </p>
