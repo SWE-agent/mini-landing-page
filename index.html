@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini agent: The minimal software engineering AI agent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>mini agent</h1>
+        <h2>The minimal software engineering AI agent</h2>
+        
+        <div class="subtitle">
+            <div class="carousel-line">
+                <span class="label">In use by</span>
+                <div class="carousel-wrapper">
+                    <div id="carousel" class="carousel"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>
+                In 2024, we built <a href="https://github.com/swe-bench/SWE-bench" target="_blank">SWE-bench</a> 
+                and <a href="https://github.com/swe-agent/swe-agent" target="_blank">SWE-agent</a> at Princeton University 
+                and helped kickstart the coding agent revolution. These works have influenced most modern AI agents, including Claude Code, GitHub copilot and many others.
+            </p>
+
+            <p>
+                Our latest work is the <code>mini</code> agent (aka <code>mini-swe-agent</code>): It turns out that modern language models 
+                allow you to build much, much simpler agents, than anyone believed. In fact, some 100 lines of python are enough!
+            </p>
+
+            <p class="intro-text">The <code>mini</code> agent is for</p>
+
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <strong>Developers</strong> who like to <strong>own, understand, and modify</strong> their tools
+                </div>
+                <div class="feature-box">
+                    <strong>Researchers</strong> who want to <strong><a href="https://swe-bench.com" target="_blank">benchmark</a>, 
+                    <a href="https://swesmith.com/" target="_blank">fine-tune</a> or RL</strong> without assumptions, bloat, or surprises
+                </div>
+                <div class="feature-box">
+                    <strong>Engineers</strong> who want something <strong>trivial to sandbox & to deploy anywhere</strong>
+                </div>
+            </div>
+
+            <p class="details-heading">Here's some details:</p>
+
+            <div class="details-grid">
+                <div class="detail-box">
+                    <strong>Minimal:</strong> Just <a href="https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/agents/default.py" target="_blank">100 lines of python</a> 
+                    (+100 total for <a href="https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/environments/local.py" target="_blank">env</a>, 
+                    <a href="https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/models/litellm_model.py" target="_blank">model</a>, 
+                    <a href="https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/run/hello_world.py" target="_blank">script</a>) — no fancy dependencies!
+                </div>
+                <div class="detail-box">
+                    <strong>Performant:</strong> Scores >74% on the <a href="https://www.swebench.com/" target="_blank">SWE-bench verified benchmark</a>; 
+                    starts faster than Claude Code
+                </div>
+                <div class="detail-box">
+                    <strong>Deployable:</strong> In addition to local envs, you can use <strong>docker</strong>, <strong>podman</strong>, 
+                    <strong>singularity</strong>, <strong>apptainer</strong>, and more
+                </div>
+                <div class="detail-box">
+                    <strong>Cutting edge:</strong> Built by the Princeton & Stanford team behind 
+                    <a href="https://swebench.com" target="_blank">SWE-bench</a> and 
+                    <a href="https://swe-agent.com" target="_blank">SWE-agent</a>.
+                </div>
+            </div>
+
+            <p class="more-at">More at</p>
+
+            <div class="cta-grid">
+                <a href="https://github.com/swe-agent/mini-swe-agent" target="_blank" class="cta-box">
+                    <div class="cta-title">GitHub</div>
+                    <div class="cta-subtitle">swe-agent/mini-swe-agent</div>
+                </a>
+                <a href="https://minimal-agent.com" target="_blank" class="cta-box">
+                    <div class="cta-title"><code>mini</code> Documentation</div>
+                </a>
+                <a href="https://minimal-agent.com" target="_blank" class="cta-box">
+                    <div class="cta-title">Agents from scratch</div>
+                    <div class="cta-subtitle">Tutorial</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
