@@ -1,19 +1,14 @@
-// Companies and universities to display
-const companies = ['Meta', 'NVIDIA', 'Essential AI', 'Anyscale'];
-const universities = ['Princeton University', 'Stanford University', 'Carnegie Mellon University', 'University of Illinois Urbana Champaign'];
-
-// Interleave the two lists
-function interleave(arr1, arr2) {
-    const result = [];
-    const maxLength = Math.max(arr1.length, arr2.length);
-    for (let i = 0; i < maxLength; i++) {
-        if (i < arr1.length) result.push(arr1[i]);
-        if (i < arr2.length) result.push(arr2[i]);
-    }
-    return result;
-}
-
-const allItems = interleave(companies, universities);
+// Items to display in carousel (interleaved companies and universities)
+const allItems = [
+    'Meta', 
+    'Princeton University', 
+    'NVIDIA', 
+    'Stanford University', 
+    'Essential AI', 
+    'Carnegie Mellon University', 
+    'Anyscale', 
+    'University of Illinois Urbana Champaign'
+];
 
 // Get carousel container
 const carousel = document.getElementById('carousel');
